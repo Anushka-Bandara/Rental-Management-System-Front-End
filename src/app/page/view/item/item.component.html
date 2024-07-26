@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row g-3 text-center d-flex ">
+        <div class="col-md-6">
+            <label for="id" class="form-label">Item Id</label>
+            <input type="text" class="form-control" [(ngModel)]="item.id" id="id">
+        </div>
+
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="item.name" id="name">
+        </div>
+
+        <div class="col-md-6">
+            <label for="rental" class="form-label">Rental Per Day</label>
+            <input type="email" class="form-control" [(ngModel)]="item.rentPerDay" id="rental">
+        </div>
+
+        <div class="col-md-6">
+            <label for="fine" class="form-label">Fine Per Day</label>
+            <input type="email" class="form-control" [(ngModel)]="item.finePerDay" id="fine">
+        </div>
+
+        <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example" id="department"
+                [(ngModel)]="item.isAvailable">
+                <option value="">true </option>
+                <option value="">false </option>
+            </select>
+        </div>
+
+
+        <div class="col-md-6">
+
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-success" (click)="addItem()">Add</button>
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-warning">Update</button>
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+
+    </div>
+</div>

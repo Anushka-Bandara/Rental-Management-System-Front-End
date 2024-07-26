@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row g-3 text-center d-flex ">
+        <div class="col-md-6">
+            <label for="id" class="form-label">Rental Id</label>
+            <input type="number" class="form-control" [(ngModel)]="rental.id" id="id">
+        </div>
+
+        <div class="col-md-6">
+            <label for="name" class="form-label">Rental Date</label>
+            <input type="date" class="form-control" [(ngModel)]="rental.rentDate" id="name">
+        </div>
+
+        <div class="col-md-6">
+            <label for="rental" class="form-label">Return Date</label>
+            <input type="date" class="form-control" [(ngModel)]="rental.returnDate" id="rental">
+        </div>
+
+        <div class="col-md-6">
+            <label for="fine" class="form-label">Due Date</label>
+            <input type="date" class="form-control" [(ngModel)]="rental.dueDate" id="fine">
+        </div>
+
+        <div class="col-md-6">
+            <label for="fine" class="form-label">Total Cost</label>
+            <input type="number" class="form-control" [(ngModel)]="rental.total" id="fine">
+        </div>
+
+
+        <div class="col-md-6">
+
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-success" (click)="addRental()">Add</button>
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-warning">Update</button>
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </div>
+
+        <div class="col-3">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+
+    </div>
+</div>
